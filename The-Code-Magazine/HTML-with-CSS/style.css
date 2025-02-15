@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Sayfa Bölümleri */
+
+body {
+  font-family: sans-serif;
+  color: #444;
+  border-top: 5px solid #1098ad;
+}
+
+/*Konteyner kapsayıcısının içindeki tüm etiketler 700px genişliğinde ve ya
+700'px den daha düşük bir değere sahip olmalıdır.*/
+.container {
+  width: 800px;
+  /*   margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+/*Sayfadaki elemanların ortalanmasını sağlar*/
+
+.main-header {
+  background-color: #f7f7f7;
+  /*   padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  /* VEYA */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  /* height: 80px; */
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  /*   padding-top: 50px;
+  padding-bottom: 50px; */
+  padding: 50px;
+  width: 500px;
+}
+
+/* Küçük Elemanlar */
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  /* display: inline; */
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* footer p {
+    font-size: 16px;
+} */
+
+/*article header p {
+    font-style: italic;
+}*/
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+/* body{
+    background-color: #f7f7f7;
+}
+ */
+
+/* .first-li{
+    font-weight: bold;
+} */
+
+/*Psuedo classes*/
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+/*  Diğer Psuedo Sınıflar
+li:nth-child(2) {
+  color: #1098ad;   
+}
+
+li:nth-child(odd) {
+  text-decoration: underline;
+}
+
+li:nth-child(even) {
+  text-decoration: line-through;
+} */
+
+/* article etiketinin ilk çocuğu bir p etiketi olmadığı için article p:first-child komutu çalışmaz. 
+   Çünkü ilk çocuk header etiketidir. Eğer header etiketi yerine bir p etiketi koyarsanız, komut çalışır. */
+
+/* article etiketinin son çocuğu p olduğu için article p:last-child komutu ile biçimlendirme yapılabilir. */
+
+/*Bu kod işe yaramaz çünkü article etiketinin ilk çocuğu header etiketidir.*/
+article p:first-child {
+  font-style: italic;
+  color: red;
+}
+
+/* Bağlantıların Biçimlendirilmesi*/
+a:link {
+  color: #1098ad;
+  text-decoration: none; /*Linklerin altını çizmeyi kaldırır*/
+}
+
+a:visited {
+  /* color: #777; */
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+  margin: 100px;
+}
+
+nav a:link {
+  /*   background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+  display: block; */
+
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+/* LVHA */
+
+/* Resolving Conflicts **Stil Çakışmaları */
+
+#copyright {
+  color: red;
+  /* ID seçicisi diğerlerine göre yüksek öncelikte olduğu için 
+  rengi kırmızı olacaktır */
+}
+
+/* Eğer aynı öncelikte olan birden fazla seçisi varsa o türdeki seçicilerden
+en son yazılan seçici uygulanır.
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green !important ;
+  !important komudu öncelik sağlar fakat karmaşıklık yaratacağından
+  dolayı çoğu zaman kullanılmaz. Bu komut yazılırsa footerdaki p etiketi yeşil 
+  renge döner
+} 
+*/
+
+/* nav a:link,
+nav p {
+  font-size: 18px;
+}
+ */
