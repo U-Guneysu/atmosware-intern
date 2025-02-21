@@ -90,8 +90,8 @@ body {
   text-align: center;
   /* Konumlandırmak */
   position: absolute;
-  top: 120px;
-  left: 20px;
+  top: -15px;
+  left: -30px;
 }
 
 .color{
