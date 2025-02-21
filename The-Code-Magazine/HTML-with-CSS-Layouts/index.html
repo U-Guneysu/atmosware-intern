@@ -22,7 +22,7 @@
     -->
 
     <div class="container">
-      <header class="main-header">
+      <header class="main-header clearfix">
         <h1>📘 The Code Magazine</h1>
 
         <nav>
@@ -34,19 +34,23 @@
         </nav>
 
         <!-- <p>Test Paragrafı</p> -->
+        <!-- <div class="clear"></div> -->
       </header>
 
       <article>
         <header class="post-header">
           <h2>The Basic Language of the Web: HTML</h2>
+          <div class="top">top</div>
 
           <img
             src="img/laura-jones.jpg"
             alt="Headshot of Laura Jones"
             height="50"
-            width="50" />
+            width="50"
+            class="author-img" />
 
-          <p id="author">Posted by <strong>Laura Jones</strong> on Monday, June
+          <p id="author" class="author">Posted by <strong>Laura Jones</strong>
+            on Monday, June
             21st 2027</p>
 
           <img
@@ -55,6 +59,7 @@
             width="500"
             height="200"
             class="post-img" />
+          <button>❤️ Like</button>
         </header>
 
         <p>
@@ -151,7 +156,6 @@
           </li>
         </ul>
       </aside>
-
       <footer>
         <p id="copyright" class="copyright text">
           Copyright &copy; 2027 by The Code Magazine.

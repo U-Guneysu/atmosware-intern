@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -8,6 +9,15 @@ body {
   line-height: 1.5;
   position: relative;
 }
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* .container {
+} */
 
 .product {
   border: 5px solid black;
@@ -18,14 +28,42 @@ body {
 
 .product-title {
   text-align: center;
-  font-size: 22px;
+  font-size: 24px;
   text-transform: uppercase;
   background-color: #f7f7f7;
   padding-top: 10px;
+  font-weight: bolder;
+}
+
+.product-description {
+  clear: both;
+  margin-bottom: 10px;
+}
+
+.product-info {
+  /* (825 - 8 - 250 - 80 ) / 2 = 243,5 */
+  width: 243px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.product-img {
+  float: left;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.product-details {
+  width: 243px;
+  float: left;;
+  margin-left: 40px;
 }
 
 .price {
   font-size: 24px;
+  float: left;
 }
 
 .shipping {
@@ -34,6 +72,8 @@ body {
   font-weight: bold;
   color: #777;
   margin-bottom: 20px;
+  margin-top: 8px;
+  float: right;
 }
 
 .more-info:link,
@@ -46,8 +86,7 @@ body {
 .details-title {
   text-transform: uppercase;
   font-size: 16px;
-  margin-bottom: 15px;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .details-list {
@@ -86,15 +125,15 @@ body {
   padding: 7px 15px;
   /* display: inline-block; 
   VEYA*/
-  width: 40px;
+  width: 70px;
   text-align: center;
   /* Konumlandırmak */
   position: absolute;
-  top: 120px;
-  left: 20px;
+  top: -15px;
+  left: -30px;
 }
 
-.color{
+.color {
   background-color: #000;
   height: 22px;
   width: 22px;
@@ -102,22 +141,22 @@ body {
   margin-right: 10px;
 }
 
-.color-blue{
+.color-blue {
   background-color: blue;
 }
 
-.color-red{
+.color-red {
   background-color: red;
 }
 
-.color-green{
+.color-green {
   background-color: green;
 }
 
-.color-yellow{
+.color-yellow {
   background-color: yellow;
 }
 
-.color-brown{
+.color-brown {
   background-color: brown;
 }
