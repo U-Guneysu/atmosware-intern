@@ -48,6 +48,7 @@ console.log("number4 (ParseFloat): ", number4, "\ntypeof: ", typeof number4); //
 
 console.log("*************************************");
 
+//Number Veri Tipinden String Veri Tipine Dönüştürme
 console.log("Number Veri Tipinden String \nVeri Tipine Dönüştürme");
 let number5 = 55;
 console.log("number5 (toString): ", number5, "\ntypeof: ", typeof number5); // number
