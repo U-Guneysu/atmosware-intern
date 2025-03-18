@@ -1,4 +1,4 @@
-// *********** Template Literals Kullanımı ***********
+// ************* Template Literals Kullanımı *************
 
 let userName = "John";
 const DOMAIN = "kodluyoruz.org";

@@ -1,10 +1,10 @@
-// ******* Merhaba Dünya Örnekleri ******* //
+// ************* Merhaba Dünya Örnekleri *************
 
 // ---  Döküman'a (Document) Yazdırma İşlemi ile Merhaba Dünya: --- //
 document.write("Merhaba Dünya");
 // ----------------- //
 
-// ---Uyarı Mesajı (Alert) ile Merhaba Dünya:--- //
+// --- Uyarı Mesajı (Alert) ile Merhaba Dünya: --- //
 alert("Merhaba Dünya");
 // ----------------- //
 

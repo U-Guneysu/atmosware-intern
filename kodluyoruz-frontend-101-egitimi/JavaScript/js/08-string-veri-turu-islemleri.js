@@ -1,4 +1,4 @@
-// *********** String Veri Türü İşlemleri ***********
+// ************* String Veri Türü İşlemleri *************
 let email = "johndoe@gmail.com";
 let firstName = "John";
 let lastName = "Doe";

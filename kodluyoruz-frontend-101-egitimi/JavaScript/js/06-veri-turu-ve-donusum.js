@@ -1,4 +1,4 @@
-// ******** Veri Türünü Öğrenmek ve Veri Türü Dönüşümleri ********
+// ************* Veri Türünü Öğrenmek ve Veri Türü Dönüşümleri *************
 // JavaScript'te veri türünü öğrenmek için typeof operatörü kullanılır.
 // typeof operatörü, bir değerin veri türünü döndürür.
 // typeof operatörü ile bir değerin veri türünü öğrenmek için:

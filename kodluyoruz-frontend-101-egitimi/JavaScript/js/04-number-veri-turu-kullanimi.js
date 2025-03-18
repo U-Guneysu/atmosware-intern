@@ -1,4 +1,4 @@
-//************ Number Veri Türü Kullanımı ************
+// ************* Number Veri Türü Kullanımı *************
 // Number veri türü, sayıları temsil eder.
 // JavaScript'te sayılar iki türde olabilir:
 // 1. Tam sayılar (Örn: 3, 300, 1000)

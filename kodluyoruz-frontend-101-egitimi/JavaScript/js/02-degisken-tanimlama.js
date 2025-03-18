@@ -1,4 +1,4 @@
-// ***** let ve const ile Değişken Tanımlama *****
+// ************* let ve const ile Değişken Tanımlama *************
 
 // var ile değişken tanımlama:
 

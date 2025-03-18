@@ -1,4 +1,4 @@
-// ************ Boolean Veri Türü Kullanımı ************
+// ************* Boolean Veri Türü Kullanımı *************
 // Boolean veri türü sadece iki değer alabilir: true ve false
 // true: doğru anlamına gelir.
 // false: yanlış anlamına gelir.

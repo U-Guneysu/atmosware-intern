@@ -1,4 +1,4 @@
-// ************* Karşılaştırme ve Mantıksal Operatörler *************
+// ************* Karşılaştırma ve Mantıksal Operatörler *************
 
 let price = "100";
 let user = "user";
