@@ -1,132 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kodluyoruz - Front-End 101</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-            crossorigin="anonymous">
-    </head>
-    <body>
-        <div id="alert"></div>
-        <h1 id="greeting">Kodluyoruz - Front-End 101</h1>
-        <p id="info"></p>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodluyoruz - Front-End 101</title>
 
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-sm-8 offset-sm-2">
-                    <form id="userForm">
-                        <div class="mb-3">
-                            <label class="form-label" for="username">Kullanıcı
-                                Adı</label>
-                            <input class="form-control" type="text"
-                                name="username" id="username">
-                                </div>
-                        <div class="mb-3">
-                            <label class="form-label" for="score">Not
-                                Bilgisi</label>
-                            <input class="form-control" type="number"
-                                name="score" id="score">
-                        </div>
-                        <div class="mb-3">
-                            <button type="reset"
-                                class="btn btn-danger">Sıfırla</button>
-                            <button type="submit"
-                                class="btn btn-success">Gönder</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-sm-8 offset-sm-2 mt-4">
-                    <ul class="list-group" id="userList">
-                        <li
-                            class="list-group-item d-flex justify-content-between align-items-center">
-                            A list item
-                            <span
-                                class="badge text-bg-primary rounded-pill">14</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <ul class="list-group" id="userList"></ul> <!-- 32 -->
-        </div>
-        
+    <style>
+        .text-primary {
+            color: blue;
+        }   
+    </style>
+</head>
+<body>
+    <h1 id="greeting">Kodluyoruz - Front-End 101</h1>
+    <p id="info"></p>
 
-        <!--023 Bölüm Sonu Egzersizi 
-    <h3 id="counter">100</h3>
-    <button id="increase">Arttır</button>
-    <button id="decrease">Azalt</button> -->
-
-        <!-- 010 Öğe Seçimi ve Düzenleme İşlemleri -->
-        <!-- <h2 id="title">Lorem Ipsum Dolor</h2>
+    <!-- 010 Öğe Seçimi ve Düzenleme İşlemleri -->
+    <!-- <h2 id="title">Lorem Ipsum Dolor</h2>
     <ul id="list">
         <li>
             <a href="#" id="kodluyoruzLink">Link Bilgisi</a>
         </li>
     </ul> -->
 
-        <!-- 012 Liste İçerisindeki Son Elemana Ulaşmak veya Eleman Eklemek -->
-        <!-- <ul id="list">
+    <!-- 012 Liste İçerisindeki Son Elemana Ulaşmak veya Eleman Eklemek -->
+    <!-- <ul id="list">
         <li>Lorem.</li>
         <li>Sunt.</li>
         <li>Repellendus?</li>
     </ul> -->
-
-        <!-- Not:
+    
+    <!-- Not:
          Her Çalışma İçin Ayrı JS Dosyaları Oluşturuldu
          Dosya Üzerinde Çalışmadan Önce Lütfen Açıklama Satırında Olup Olmadığını Kontrol Edin -->
-
-        <!-- Yöntem #1 -->
-        <script>
+    
+    <!-- Yöntem #1 -->
+    <script>
     console.log("Hello World")  
-    </script>
+    </script> 
 
-        <!-- Yöntem #2 -->
-        <!-- <script src="js/01-hello-world.js"></script>  -->
-        <!-- <script src="js/02-degisken-tanimlama.js"></script>  -->
-        <!-- script src="js/03-degisken-tanimlama-kurallari.js"></script> -->
-        <!-- <script src="js/04-number-veri-turu-kullanimi.js"></script> -->
-        <!-- <script src="js/05-boolean-ver-turu-kullanimi.js"></script> -->
-        <!-- <script src="js/06-veri-turu-ve-donusum.js"></script> -->
-        <!-- <script src="js/07-temple-literals-kullanimi.js"></script> -->
-        <!-- <script src="js/08-string-veri-turu-islemleri.js"></script> -->
-        <!-- <script src="js/09-document-object-model.js"></script> -->
-        <!-- <script src="js/10-dom-icerisinden-oge-secimi.js"></script> -->
-        <!-- <script src="js/11-prompt-ile-kullanicidan-bilgi-almak.js"></script> -->
-        <!-- <script src="js/12-liste-icerisindeki-elemana-ulasmak-veya-yeni-eleman-eklemek.js"></script> -->
-        <!-- <script src="js/13-css-class-eklemek-veya-cikartmak.js"></script> -->
-        <!-- <script src="js/14-karsilastirma-ve-mantiksal-operatorler.js"></script> -->
-        <!-- <script src="js/15-kosullarla-calismak.js"></script> -->
-        <!-- <script src="js/16-coklu-kosullarla-calismak.js"></script> -->
-        <!-- <script src="js/17-ternanry-operator-ile-short-if-kullanimi.js"></script> -->
-        <!-- <script src="js/18-kosularla-calismak-bolum-sonu-egzersizi.js"></script> -->
-        <!-- <script src="js/19-fonksiyon-neden-kullaniriz.js"></script> -->
-        <!-- <script src="js/20-fonkisyona-parametre-atamak-ve-geridonus-almak.js"></script> -->
-        <!-- <script src="js/21-arrow-function-kullanimi.js"></script> -->
-        <!-- <script src="js/22-dom-etkinlikleriyle-calismak.js"></script> -->
-        <!-- <script src="js/23-function-bolum-sonu-egzersizi.js"></script> -->
-        <!-- <script src="js/24-local-storage-kullanimi.js"></script> -->
-        <!-- <script src="js/25-local-storage-bolum-sonu-egzersizi.js"></script> -->
-        <!-- <script src="js/26-form-submit-yontemi.js"></script> -->
-        <!-- <script src="js/27-input-icindeki-degeri-almak.js"></script> -->
-        <!-- <script src="js/28-formlarla-calismak-bolum-sonu-egzesizi.js"></script> -->
-        <!-- <script src="js/29-dizi-olusturmak-icindeki-elemanlara-ulasmak.js"></script> -->
-        <!-- <script src="js/30-diziye-yeni-eleman-eklemek-cikartmak-ve-guncellemek.js"></script> -->
-        <!-- <script src="js/31-cok-kullanilan-array-metodlari-ve-array-icinde-array.js"></script> -->
-        <!-- <script src="js/32-for-dongusu-kullanimi.js"></script> -->
-        <!-- <script src="js/33-break-ve-continue.js"></script> -->
-        <!-- <script src="js/34-while-dongusu.js"></script> -->
-        <!-- <script src="js/35-array-forEach-metodu.js"></script> -->
-        <!-- <script src="js/36-array-filter-kullanimi.js"></script> -->
-        <!-- <script src="js/37-array-map-kullanimi.js"></script> -->
-        <!-- <script src="js/38-object-nedir-nasil-olusturulur.js"></script -->
-        <!-- <script src="js/39-object-key-value.js"></script> -->
-        <!-- <script src="js/40-object-icerisine-metod-nasil-eklenir.js"></script> -->
-    </body>
+    <!-- Yöntem #2 -->
+    <!-- <script src="js/01-hello-world.js"></script>  -->
+    <!-- <script src="js/02-degisken-tanimlama.js"></script>  -->
+    <!-- script src="js/03-degisken-tanimlama-kurallari.js"></script> -->
+    <!-- <script src="js/04-number-veri-turu-kullanimi.js"></script> -->
+    <!-- <script src="js/05-boolean-ver-turu-kullanimi.js"></script> -->
+    <!-- <script src="js/06-veri-turu-ve-donusum.js"></script> -->
+    <!-- <script src="js/07-temple-literals-kullanimi.js"></script> -->
+    <!-- <script src="js/08-string-veri-turu-islemleri.js"></script> -->
+    <!-- <script src="js/09-document-object-model.js"></script> -->
+    <!-- <script src="js/10-dom-icerisinden-oge-secimi.js"></script> -->
+    <!-- <script src="js/11-prompt-ile-kullanicidan-bilgi-almak.js"></script> -->
+    <!-- <script src="js/12-liste-icerisindeki-elemana-ulasmak-veya-yeni-eleman-eklemek.js"></script> -->
+    <!-- <script src="js/13-css-class-eklemek-veya-cikartmak.js"></script> -->
+    <!-- <script src="js/14-karsilastirma-ve-mantiksal-operatorler.js"></script> -->
+    <!-- <script src="js/15-kosullarla-calismak.js"></script> -->
+    <!-- <script src="js/16-coklu-kosullarla-calismak.js"></script> -->
+    <!-- <script src="js/17-ternanry-operator-ile-short-if-kullanimi.js"></script> -->
+    <!-- <script src="js/18-kosularla-calismak-bolum-sonu-egzersizi.js"></script> -->
+</body>
 </html>
